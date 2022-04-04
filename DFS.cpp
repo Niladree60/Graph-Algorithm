@@ -41,12 +41,7 @@ int main()
     #endif
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    /*ll tc;
-    cin >> tc;
-    while(tc--)
-    {
-      solve();  
-    }*/
+    
     solve();
     
     return 0;
