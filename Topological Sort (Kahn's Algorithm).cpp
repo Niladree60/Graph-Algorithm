@@ -21,6 +21,7 @@ ll in[100];
 void kahn(int n)
 {
     queue<ll> q;
+    //priority_queue<int, vector<int> , greater<int> > q;
     for(int i = 1 ; i <= n ; i++)
     {
         if(in[i] == 0)
@@ -32,6 +33,7 @@ void kahn(int n)
     while(!q.empty())
     {
         int cur = q.front();
+        // int cur = q.top(); this is for the mean heap
         vc.push_back(cur);
         q.pop();
         for(int node : adj[cur])
